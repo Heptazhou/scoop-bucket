@@ -1,15 +1,24 @@
 on:
-  workflow_dispatch:
+  workflow_dispatch: ~
+  push:
+    branches:
+      - "master"
+    paths:
+      - ".github/workflows/excavator.yml"
   schedule:
-    # run every 4 hours
-    - cron: "20 */4 * * *"
+    - cron: "0 */4 * * *"
 name: Excavator
 jobs:
   excavate:
     name: Excavate
     runs-on: windows-latest
+    permissions:
+      contents: write
+      statuses: write
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - name: Excavate
         uses: ScoopInstaller/GithubActions@main
         env:
