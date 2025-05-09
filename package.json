@@ -1,0 +1,19 @@
+{
+	"name": "scoop-bucket",
+	"type": "module",
+	"version": "0.0.0",
+	"license": "AGPL-3.0-only",
+	"private": true,
+	"scripts": {
+		"upd": "pnpm up --latest",
+		"sync": "pwsh bin/checkver.ps1 -ForceUpdate && prettier -w bucket/**/*.json",
+		"test": "pwsh bin/checkhashes.ps1 -UseCache"
+	},
+	"devDependencies": {
+		"prettier": "^3.5.3"
+	},
+	"engines": {
+		"node": ">=22.0.0",
+		"pnpm": ">=10.0.0"
+	}
+}
