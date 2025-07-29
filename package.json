@@ -10,7 +10,7 @@
 		"test": "pwsh bin/checkhashes.ps1 -UseCache"
 	},
 	"devDependencies": {
-		"prettier": "^3.5.3"
+		"prettier": "^3.6.2"
 	},
 	"engines": {
 		"node": ">=22.0.0",
