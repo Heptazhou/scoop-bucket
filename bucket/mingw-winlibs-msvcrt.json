@@ -1,17 +1,17 @@
 {
-	"version": "15.2.0-13.0.0-r1",
+	"version": "16.1.0-14.0.0-r3",
 	"description": "GNU Compiler Collection (MSVCRT, WinLibs build)",
 	"homepage": "https://winlibs.com",
 	"license": "GPL-3.0-or-later,ZPL-2.1,BSD-2-Clause,...",
 	"architecture": {
 		"64bit": {
-			"url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/15.2.0posix-13.0.0-msvcrt-r1/winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64msvcrt-13.0.0-r1.7z",
-			"hash": "2b1e3970561555513cbcbe1325a740468b3dbeaaf244217cb1bc3e08c2f14245",
+			"url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/16.1.0posix-14.0.0-msvcrt-r3/winlibs-x86_64-posix-seh-gcc-16.1.0-mingw-w64msvcrt-14.0.0-r3.7z",
+			"hash": "e6c3309b078199b235274b522a22c814f284e7b3c6af37e0fe7b204c401e93cf",
 			"extract_dir": "mingw64"
 		},
 		"32bit": {
-			"url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/15.2.0posix-13.0.0-msvcrt-r1/winlibs-i686-posix-dwarf-gcc-15.2.0-mingw-w64msvcrt-13.0.0-r1.7z",
-			"hash": "a6b3a98686e80af73d6cb64802ca65cabf0413fcd0c985c37a4abb500ef311ad",
+			"url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/16.1.0posix-14.0.0-msvcrt-r3/winlibs-i686-posix-dwarf-gcc-16.1.0-mingw-w64msvcrt-14.0.0-r3.7z",
+			"hash": "dd0780ce40746d07f51cdf75f5ca19b7a934a7dd14739cf275a025f4b8a7e88b",
 			"extract_dir": "mingw32"
 		}
 	},
