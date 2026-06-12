@@ -6,14 +6,22 @@
 	"private": true,
 	"scripts": {
 		"upd": "pnpm up --latest",
-		"sync": "pwsh bin/checkver.ps1 -ForceUpdate && prettier -w bucket/**/*.json",
+		"make": "pwsh bin/checkver.ps1 -ForceUpdate && prettier bucket/**/*.json -w",
+		"sync": "pwsh bin/checkver.ps1 -ForceUpdate && dos2unix bucket/**/*.json",
 		"test": "pwsh bin/checkhashes.ps1 -UseCache"
 	},
 	"devDependencies": {
+		"dos2unix-cli": "^1.0.1",
 		"prettier": "^3.8.4"
 	},
 	"engines": {
 		"node": ">=24.0.0",
-		"pnpm": ">=10.0.0"
+		"pnpm": ">=10.0.0 <11"
+	},
+	"pnpm": {
+		"overrides": {
+			"glob": "*",
+			"yargs": "17"
+		}
 	}
 }
