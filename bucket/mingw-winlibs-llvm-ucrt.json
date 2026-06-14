@@ -1,7 +1,7 @@
 {
 	"version": "14.2.0-19.1.1-12.0.0-r2",
 	"description": "GNU Compiler Collection with LLVM/Clang/LLD/LLDB (UCRT, WinLibs build)",
-	"homepage": "https://winlibs.com",
+	"homepage": "https://winlibs.com/",
 	"license": "GPL-3.0-or-later,ZPL-2.1,BSD-2-Clause,...",
 	"architecture": {
 		"64bit": {
@@ -15,10 +15,10 @@
 			"extract_dir": "mingw32"
 		}
 	},
-	"post_install": "Copy-Item \"$dir\\bin\\mingw32-make.exe\" \"$dir\\bin\\make.exe\"",
+	"post_install": "cp \"$dir\\bin\\mingw32-make.exe\" \"$dir\\bin\\make.exe\"",
 	"env_add_path": "bin",
 	"checkver": {
-		"regex": "(?<gcc>[\\d.]+)posix-(?<llvm>[\\d.]+)-(?<mingw>[\\d.]+)-ucrt-r(?<release>\\d+)",
+		"regex": "/(?<gcc>[0-9.]+)posix-(?<llvm>[0-9.]+)-(?<mingw>[0-9.]+)-ucrt-r(?<release>\\d+)/",
 		"replace": "${gcc}-${llvm}-${mingw}-r${release}"
 	},
 	"autoupdate": {
