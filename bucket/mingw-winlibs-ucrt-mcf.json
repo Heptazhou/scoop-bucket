@@ -15,19 +15,19 @@
 			"extract_dir": "mingw32"
 		}
 	},
-	"post_install": "cp \"$dir\\bin\\mingw32-make.exe\" \"$dir\\bin\\make.exe\"",
+	"post_install": "cp \"$dir/bin/mingw32-make.exe\" \"$dir/bin/make.exe\"",
 	"env_add_path": "bin",
 	"checkver": {
-		"regex": "/(?<gcc>[0-9.]+)mcf-(?<mingw>[0-9.]+)-ucrt-r(?<release>\\d+)/",
+		"regex": "/(?<gcc>[0-9.]+)mcf(?<clang>-[0-9.]+)?-(?<mingw>[0-9.]+)-ucrt-r(?<release>\\d+)/",
 		"replace": "${gcc}-${mingw}-r${release}"
 	},
 	"autoupdate": {
 		"architecture": {
 			"64bit": {
-				"url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/$matchGccmcf-$matchMingw-ucrt-r$matchRelease/winlibs-x86_64-mcf-seh-gcc-$matchGcc-mingw-w64ucrt-$matchMingw-r$matchRelease.7z"
+				"url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/$matchGccmcf$matchClang-$matchMingw-ucrt-r$matchRelease/winlibs-x86_64-mcf-seh-gcc-$matchGcc-mingw-w64ucrt-$matchMingw-r$matchRelease.7z"
 			},
 			"32bit": {
-				"url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/$matchGccmcf-$matchMingw-ucrt-r$matchRelease/winlibs-i686-mcf-dwarf-gcc-$matchGcc-mingw-w64ucrt-$matchMingw-r$matchRelease.7z"
+				"url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/$matchGccmcf$matchClang-$matchMingw-ucrt-r$matchRelease/winlibs-i686-mcf-dwarf-gcc-$matchGcc-mingw-w64ucrt-$matchMingw-r$matchRelease.7z"
 			}
 		},
 		"hash": {

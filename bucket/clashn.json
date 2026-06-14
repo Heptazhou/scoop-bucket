@@ -12,7 +12,10 @@
 	},
 	"shortcuts": [["clashN.exe", "clashN"]],
 	"persist": "guiConfigs",
-	"checkver": "github",
+	"checkver": {
+		"url": "https://api.github.com/repos/2dust/clashN/releases/latest",
+		"jsonpath": "$.tag_name"
+	},
 	"autoupdate": {
 		"architecture": {
 			"64bit": {
