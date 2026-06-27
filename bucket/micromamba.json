@@ -10,7 +10,7 @@
 			"extract_dir": "Library/bin"
 		}
 	},
-	"bin": "micromamba.exe",
+	"bin": ["micromamba.exe", ["micromamba.exe", "mamba"]],
 	"post_install": "micromamba shell init -q -s powershell",
 	"pre_uninstall": "micromamba shell deinit -s powershell",
 	"env_set": {
