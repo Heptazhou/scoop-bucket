@@ -5,14 +5,17 @@
 	"license": "AGPL-3.0-only",
 	"private": true,
 	"scripts": {
-		"upd": "pnpm up --latest",
+		"rst": "pnpm up -f && pnpm postupd",
+		"upd": "pnpm up --latest && pnpm dedupe && pnpm up -s",
 		"make": "pwsh bin/checkver.ps1 -ForceUpdate && prettier bucket/**/*.json -w",
 		"sync": "pwsh bin/checkver.ps1 -ForceUpdate && dos2unix bucket/**/*.json",
-		"test": "pwsh bin/checkhashes.ps1 -UseCache"
+		"test": "pwsh bin/checkhashes.ps1 -UseCache",
+		"postupd": "replace-in-file \"<!doctype\" \"<!DOCTYPE\" node_modules/prettier/*/*"
 	},
 	"devDependencies": {
 		"dos2unix-cli": "^1.0.1",
-		"prettier": "^3.8.4"
+		"prettier": "^3.9.6",
+		"replace-in-file": "^9.0.0"
 	},
 	"engines": {
 		"node": ">=24.0.0",
@@ -20,8 +23,8 @@
 	},
 	"pnpm": {
 		"overrides": {
-			"glob": "*",
-			"yargs": "17"
+			"glob": ">=13",
+			"yargs": ">=17 <18"
 		}
 	}
 }

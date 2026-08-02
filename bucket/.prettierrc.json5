@@ -1,0 +1,6 @@
+// https://prettier.io/docs/options
+{
+	objectWrap: "collapse", // "preserve" | "collapse"
+	tabWidth: 4, // 2
+	useTabs: true, // false
+}
