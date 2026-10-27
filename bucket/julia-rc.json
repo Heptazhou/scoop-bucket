@@ -1,19 +1,19 @@
 {
-	"version": "1.13.0-rc1",
+	"version": "1.14.0-alpha2",
 	"description": "The Julia programming language (Release Candidate)",
 	"homepage": "https://julialang.org/",
 	"license": "MIT",
 	"notes": "The `juliaup` tool supports installing and using different versions of Julia simultaneously.",
 	"architecture": {
 		"64bit": {
-			"url": "https://julialang-s3.julialang.org/bin/winnt/x64/1.13/julia-1.13.0-rc1-win64.zip",
-			"hash": "61fbb8b96409de1c267fbf7af266e6b80b3addd3cd66bd28bad509ee1d59f9ff",
-			"extract_dir": "julia-1.13.0-rc1"
+			"url": "https://julialang-s3.julialang.org/bin/winnt/x64/1.14/julia-1.14.0-alpha2-win64.zip",
+			"hash": "b4ebaa85972bded015973b060f3ce88dc5e16e25e9f9d8b21d02e9c8d870dd21",
+			"extract_dir": "julia-1.14.0-alpha2"
 		},
 		"32bit": {
-			"url": "https://julialang-s3.julialang.org/bin/winnt/x86/1.13/julia-1.13.0-rc1-win32.zip",
-			"hash": "46707c17958fde639fd6687ddfab18f773bf64618b01b9a97516eaf12a311af5",
-			"extract_dir": "julia-1.13.0-rc1"
+			"url": "https://julialang-s3.julialang.org/bin/winnt/x86/1.14/julia-1.14.0-alpha2-win32.zip",
+			"hash": "07706633317b6fbc17e1ad8c36e897d4dbca6ac737c2b2cebda4ece506b57d53",
+			"extract_dir": "julia-1.14.0-alpha2"
 		}
 	},
 	"bin": "bin\\julia.exe",

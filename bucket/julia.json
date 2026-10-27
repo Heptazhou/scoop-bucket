@@ -1,19 +1,19 @@
 {
-	"version": "1.12.6",
+	"version": "1.13.3",
 	"description": "The Julia programming language",
 	"homepage": "https://julialang.org/",
 	"license": "MIT",
 	"notes": "The `juliaup` tool supports installing and using different versions of Julia simultaneously.",
 	"architecture": {
 		"64bit": {
-			"url": "https://julialang-s3.julialang.org/bin/winnt/x64/1.12/julia-1.12.6-win64.zip",
-			"hash": "a63d991976e6893f508c512e3dc7bca1836c1a1f6ad1f3e4aedec159b6733e89",
-			"extract_dir": "julia-1.12.6"
+			"url": "https://julialang-s3.julialang.org/bin/winnt/x64/1.13/julia-1.13.3-win64.zip",
+			"hash": "1fae8fc95e6199b3d8f6d7a3791810e45e1b3c480eb4b9f5bb211789badfc729",
+			"extract_dir": "julia-1.13.3"
 		},
 		"32bit": {
-			"url": "https://julialang-s3.julialang.org/bin/winnt/x86/1.12/julia-1.12.6-win32.zip",
-			"hash": "e365831c91c7db21392a64a8e31983afef6ad72e5d8aa8a22f35b0b13ffb1d51",
-			"extract_dir": "julia-1.12.6"
+			"url": "https://julialang-s3.julialang.org/bin/winnt/x86/1.13/julia-1.13.3-win32.zip",
+			"hash": "aeab0344237d13b131f51b67f483fde337666f8df595347f1bce7279bd344d09",
+			"extract_dir": "julia-1.13.3"
 		}
 	},
 	"bin": "bin\\julia.exe",

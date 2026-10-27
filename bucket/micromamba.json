@@ -1,12 +1,12 @@
 {
-	"version": "2.8.1-1",
+	"version": "2.10.0-0",
 	"description": "The fast cross-platform package manager (statically linked version)",
 	"homepage": "https://github.com/mamba-org/mamba",
 	"license": "BSD-3-Clause",
 	"architecture": {
 		"64bit": {
-			"url": "https://github.com/mamba-org/micromamba-releases/releases/download/2.8.1-1/micromamba-win-64.tar.bz2",
-			"hash": "e82874c473688860d087dfe825e1a52ae9deaf8099c7edaf3caff80e2687ed5d",
+			"url": "https://github.com/mamba-org/micromamba-releases/releases/download/2.10.0-0/micromamba-win-64.tar.bz2",
+			"hash": "6283f25f8142606d86e81a43c7103b5d4f1d5c2027e3f9d7326eff23b33930d8",
 			"extract_dir": "Library/bin"
 		}
 	},

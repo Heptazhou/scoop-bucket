@@ -14,7 +14,7 @@
 	},
 	"devDependencies": {
 		"dos2unix-cli": "^1.0.1",
-		"prettier": "^3.9.6",
+		"prettier": "^3.9.10",
 		"replace-in-file": "^9.0.0"
 	},
 	"engines": {
