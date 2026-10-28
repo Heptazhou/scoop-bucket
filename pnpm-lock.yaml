@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  glob: '>=13'
+  glob: '>=13 <14'
   yargs: '>=17 <18'
 
 importers:
