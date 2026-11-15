@@ -7,9 +7,10 @@
 	"scripts": {
 		"rst": "pnpm up -f && pnpm postupd",
 		"upd": "pnpm up --latest && pnpm dedupe && pnpm up -s",
+		"hash": "pwsh bin/checkhashes.ps1 -UseCache",
 		"make": "pwsh bin/checkver.ps1 -ForceUpdate && prettier bucket/**/*.json -w",
 		"sync": "pwsh bin/checkver.ps1 -ForceUpdate && dos2unix bucket/**/*.json",
-		"test": "pwsh bin/checkhashes.ps1 -UseCache",
+		"test": "pwsh bin/missing-checkver.ps1 && pwsh bin/checkurls.ps1",
 		"postupd": "replace-in-file \"<!doctype\" \"<!DOCTYPE\" node_modules/prettier/*/*"
 	},
 	"devDependencies": {
